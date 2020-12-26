@@ -1,5 +1,27 @@
 const { ApolloServer, gql } = require('apollo-server');
 
+const usuarios = [{
+    id: 1,
+    nome: 'joao',
+    email: 'joao@email.com',
+    idade: 37
+},{
+    id: 2,
+    nome: 'paulo',
+    email: 'paulo@email.com',
+    idade: 28
+},{
+    id: 3,
+    nome: 'ana',
+    email: 'ana@email.com',
+    idade: 25
+},{
+    id: 4,
+    nome: 'carla',
+    email: 'carla@email.com',
+    idade: 21
+}]
+
 const typeDefs = gql`
     # Pontos de entrada da API
     scalar Date
@@ -17,13 +39,15 @@ const typeDefs = gql`
         nome: String!
         preco: Float!
         desconto: Float
-        precoComDesconto: Float
+        precoComDesconto: Float        
     }
     
     type Query {
         horaAtual: Date
         usuarioLogado: Usuario
         produtoEmDestaque: Produto
+        numerosMegaSena: [Int]!
+        usuarios: [Usuario]!
     }
 `
 
@@ -59,6 +83,15 @@ const resolvers = {
                 preco: 5000.00,
                 desconto: 0.18
             }
+        },
+        numerosMegaSena() {
+            const crescente = (a, b) => a - b
+            return Array(6).fill(0)
+                .map(() => parseInt(Math.random() * 60 + 1))
+                .sort(crescente)
+        },
+        usuarios() {
+            return usuarios
         }
 
     }
