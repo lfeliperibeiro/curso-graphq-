@@ -7,8 +7,10 @@
     <list default="true" id="8a97bbd8-1f9c-4f92-9123-ad90dd413699" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema-query/projeto/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema-query/projeto/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema-query/projeto/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema-query/projeto/schema/index.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/schema/index.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema-query/projeto/schema/produto.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/schema/Produto.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema-query/projeto/schema/query.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/schema/Query.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema-query/projeto/schema/usuario.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/schema/Usuario.graphql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="GraphQL File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -88,7 +91,7 @@
       <workItem from="1609039465598" duration="20000" />
       <workItem from="1609196353906" duration="599000" />
       <workItem from="1609199387439" duration="3154000" />
-      <workItem from="1609533250733" duration="1770000" />
+      <workItem from="1609533250733" duration="3044000" />
     </task>
     <servers />
   </component>
