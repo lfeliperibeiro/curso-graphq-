@@ -7,11 +7,20 @@
     <list default="true" id="8a97bbd8-1f9c-4f92-9123-ad90dd413699" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema-query/projeto/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema-query/projeto/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema-query/projeto/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema-query/projeto/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GraphQL File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +54,7 @@
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -79,6 +88,7 @@
       <workItem from="1609039465598" duration="20000" />
       <workItem from="1609196353906" duration="599000" />
       <workItem from="1609199387439" duration="3154000" />
+      <workItem from="1609533250733" duration="1770000" />
     </task>
     <servers />
   </component>
