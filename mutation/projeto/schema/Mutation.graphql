@@ -1,0 +1,8 @@
+type Mutation {
+  newUser(
+      nome: String
+      email: String
+      idade: Int
+  ): Usuario!
+    deleteUser(id: Int): Usuario
+}
