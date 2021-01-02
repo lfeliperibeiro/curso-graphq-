@@ -1,0 +1,21 @@
+{
+  "name": "curso-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "apollo-server": "^2.19.1",
+    "graphql": "^15.4.0",
+    "graphql-import": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "../node_modules/.bin/nodemon --ext js, graphql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
