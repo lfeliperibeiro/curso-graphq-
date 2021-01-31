@@ -1,29 +1,53 @@
-const { usuarios, nextId } = require('../data/db');
+const { usuarios, proximoId } = require('../data/db');
+
+function indiceUsuario(filtro) {
+    if(!filtro) return -1
+    const {id, email} = filtro
+   if(id) {
+       return usuarios
+           .findIndex(u => u.id === id)
+   }else if(email) {
+       return usuarios
+           .findIndex(u => u.email === email)
+   }
+   return -1
+}
 
 module.exports = {
-    newUser(_, args) {
-        const emailExist = usuarios
-            .some(user => user.email === args.email)
+    novoUsuario(_, { dados }) {
+        const emailExistente = usuarios
+            .some(u => u.email === dados.email)
 
-        if(emailExist){
-            throw new Error('Email já Extiste!')
+        if(emailExistente) {
+            throw new Error('email cadastrado')
         }
 
-        const novo = {
-            id: nextId(),
-           ...args,
-            perfil_id: 1,
-            status: 'ATIVO'
-        }
-        usuarios.push(novo)
+    const novo = {
+        id: proximoId(),
+        ...dados,
+        perfil_id: 1,
+        status: 'ATIVO'
+    }
+    usuarios.push(novo)
         return novo
+  },
+    excluirUsuario(_, { filtro }){
+        const i = indiceUsuario(filtro)
+        if( i < 0) return null
+        const excluidos = usuarios.splice(i, 1)
+        return excluidos ? excluidos[0] : null
     },
-    deleteUser(_, { id }) {
-        const index = usuarios
-            .findIndex(user => user.id === id)
+    alterarUsuario(_, args) {
+        const i = usuarios
+            .findIndex(u => u.id === args.id)
+        if( i < 0 ) return null
 
-        if( index < 0) return null
-        const deleted = usuarios.splice(index, 1)
-        return deleted ? deleted[0] : null
+        const usuario = {
+            ...usuarios[i],
+            ...args
+        }
+
+        usuarios.splice(i, 1, usuario)
+        return usuario
     }
 }

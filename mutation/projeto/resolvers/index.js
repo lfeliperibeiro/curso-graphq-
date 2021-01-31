@@ -4,6 +4,6 @@ const Mutation = require('./Mutation')
 
 module.exports = {
     Query,
-    Usuario,
-    Mutation
+    Mutation,
+    Usuario
 }
